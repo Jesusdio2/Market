@@ -2,7 +2,10 @@
 # SPDX-License-Identifier: CC0-1.0
 
 name: Build
-on: [pull_request, push]
+on:
+  push:
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
